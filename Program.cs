@@ -28,7 +28,7 @@ double res = pow(GetNumbers());
 Console.WriteLine($"Степень числа с основанием {power[basePower]} и показателем {power[indexPower]} равна: {res}");
 //*/
 
-//*/
+/*/
 //Задача 27
 string GetNumbers()
 {
@@ -56,4 +56,20 @@ int SumDigit(string num)
 
 int res = SumDigit(GetNumbers());
 Console.WriteLine($"Сумма цифр в числе равна: {res}");
+//*/
+
+//*/
+//Задача 29
+int[] RandArray(int size)
+{
+    int[] array = new int[size];
+    for(int i=0;i<size;i++) {
+        array[i] = new Random().Next(0,1001);
+    }
+    return array;
+}
+
+int size=8;
+int[] a=RandArray(size);
+Console.WriteLine($"[{String.Join(", ",a)}]");
 //*/

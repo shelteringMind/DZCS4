@@ -1,4 +1,4 @@
-﻿//*/
+﻿/*/
 //Задача 25
 const int basePower = 0;
 const int indexPower = 1;
@@ -26,4 +26,34 @@ double pow(int[] arrayPow)
 
 double res = pow(GetNumbers());
 Console.WriteLine($"Степень числа с основанием {power[basePower]} и показателем {power[indexPower]} равна: {res}");
+//*/
+
+//*/
+//Задача 27
+string GetNumbers()
+{
+Console.WriteLine("Введите число: ");
+return Console.ReadLine()!;
+}
+
+int SumDigit(string num)
+{
+    int result = 0;
+    int iter = 0;
+    int numLengt = num.Length;
+
+    if (num[0] == '-') {
+        iter = 1;
+        numLengt--;
+    }
+
+    for(;iter<num.Length;iter++) {
+        result += (int)Char.GetNumericValue(num[iter]);
+        }
+
+    return result;
+}
+
+int res = SumDigit(GetNumbers());
+Console.WriteLine($"Сумма цифр в числе равна: {res}");
 //*/

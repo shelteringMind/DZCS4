@@ -44,7 +44,7 @@ int SumDigit(string num)
 
     if (num[0] == '-') {
         iter = 1;
-        numLengt--;
+        numLength--;
     }
 
     for(;iter<num.Length;iter++) {

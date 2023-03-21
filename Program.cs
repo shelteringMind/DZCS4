@@ -40,7 +40,7 @@ int SumDigit(string num)
 {
     int result = 0;
     int iter = 0;
-    int numLengt = num.Length;
+    int numLength = num.Length;
 
     if (num[0] == '-') {
         iter = 1;
@@ -58,7 +58,7 @@ int res = SumDigit(GetNumbers());
 Console.WriteLine($"Сумма цифр в числе равна: {res}");
 //*/
 
-//*/
+/*/
 //Задача 29
 int[] RandArray(int size)
 {
